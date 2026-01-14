@@ -68,12 +68,12 @@ namespace WinFormsApp.MDIForm
             }
         }
         private void OpenChildForm(Form formName)
-        {   
+        {
             foreach (Form f in this.MdiChildren)
             {
                 if (f.GetType() == formName.GetType())
                 {
-                    f.Activate();  
+                    f.Activate();
                     return;
                 }
             }
@@ -81,6 +81,21 @@ namespace WinFormsApp.MDIForm
             formName.MdiParent = this;
             formName.WindowState = FormWindowState.Normal;
             formName.Show();
+        }
+
+        private void mnuTileVertical_Click(object sender, EventArgs e)
+        {
+            this.LayoutMdi(MdiLayout.TileVertical);
+        }
+
+        private void mnuTileHorizontal_Click(object sender, EventArgs e)
+        {
+            this.LayoutMdi(MdiLayout.TileHorizontal);
+        }
+
+        private void mnuArrangeCascade_Click(object sender, EventArgs e)
+        {
+            this.LayoutMdi(MdiLayout.Cascade);
         }
     }
 }

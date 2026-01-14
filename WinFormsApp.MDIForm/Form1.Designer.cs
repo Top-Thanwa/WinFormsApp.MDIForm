@@ -42,13 +42,17 @@
             เปดฟอรมAToolStripMenuItem = new ToolStripMenuItem();
             mnuFormB = new ToolStripMenuItem();
             mnuFormC = new ToolStripMenuItem();
+            ปรบรปแบบToolStripMenuItem = new ToolStripMenuItem();
+            mnuTileHorizontal = new ToolStripMenuItem();
+            mnuTileVertical = new ToolStripMenuItem();
+            mnuArrangeCascade = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // menuStrip1
             // 
             menuStrip1.ImageScalingSize = new Size(20, 20);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { mnuForm, mnuFormA, mnuFormB, mnuFormC });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { mnuForm, mnuFormA, mnuFormB, mnuFormC, ปรบรปแบบToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(994, 28);
@@ -65,52 +69,52 @@
             // mnuFromMax
             // 
             mnuFromMax.Name = "mnuFromMax";
-            mnuFromMax.Size = new Size(224, 26);
+            mnuFromMax.Size = new Size(183, 26);
             mnuFromMax.Text = "ขยาย";
             mnuFromMax.Click += mnuFromMax_Click;
             // 
             // mnuFromMin
             // 
             mnuFromMin.Name = "mnuFromMin";
-            mnuFromMin.Size = new Size(224, 26);
+            mnuFromMin.Size = new Size(183, 26);
             mnuFromMin.Text = "ย่อ";
             mnuFromMin.Click += mnuFromMin_Click;
             // 
             // mnuFormNormal
             // 
             mnuFormNormal.Name = "mnuFormNormal";
-            mnuFormNormal.Size = new Size(224, 26);
+            mnuFormNormal.Size = new Size(183, 26);
             mnuFormNormal.Text = "ปรับปกติ";
             mnuFormNormal.Click += mnuFormNormal_Click;
             // 
             // ปดโปรแกรมToolStripMenuItem
             // 
             ปดโปรแกรมToolStripMenuItem.Name = "ปดโปรแกรมToolStripMenuItem";
-            ปดโปรแกรมToolStripMenuItem.Size = new Size(221, 6);
+            ปดโปรแกรมToolStripMenuItem.Size = new Size(180, 6);
             // 
             // mnuFormClose
             // 
             mnuFormClose.Name = "mnuFormClose";
-            mnuFormClose.Size = new Size(224, 26);
+            mnuFormClose.Size = new Size(183, 26);
             mnuFormClose.Text = "ปิดฟอร์ม";
             mnuFormClose.Click += mnuFormClose_Click;
             // 
             // mnuFormCloseAll
             // 
             mnuFormCloseAll.Name = "mnuFormCloseAll";
-            mnuFormCloseAll.Size = new Size(224, 26);
+            mnuFormCloseAll.Size = new Size(183, 26);
             mnuFormCloseAll.Text = "ปิดฟอร์มทั้งหมด";
             mnuFormCloseAll.Click += mnuFormCloseAll_Click;
             // 
             // toolStripMenuItem1
             // 
             toolStripMenuItem1.Name = "toolStripMenuItem1";
-            toolStripMenuItem1.Size = new Size(221, 6);
+            toolStripMenuItem1.Size = new Size(180, 6);
             // 
             // mnuExit
             // 
             mnuExit.Name = "mnuExit";
-            mnuExit.Size = new Size(224, 26);
+            mnuExit.Size = new Size(183, 26);
             mnuExit.Text = "ปิดโปรแกรม";
             mnuExit.Click += mnuExit_Click;
             // 
@@ -141,6 +145,34 @@
             mnuFormC.Size = new Size(90, 24);
             mnuFormC.Text = "เปิดฟอร์ม C";
             mnuFormC.Click += mnuFormC_Click;
+            // 
+            // ปรบรปแบบToolStripMenuItem
+            // 
+            ปรบรปแบบToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { mnuTileHorizontal, mnuTileVertical, mnuArrangeCascade });
+            ปรบรปแบบToolStripMenuItem.Name = "ปรบรปแบบToolStripMenuItem";
+            ปรบรปแบบToolStripMenuItem.Size = new Size(64, 24);
+            ปรบรปแบบToolStripMenuItem.Text = "จัดเรียง";
+            // 
+            // mnuTileHorizontal
+            // 
+            mnuTileHorizontal.Name = "mnuTileHorizontal";
+            mnuTileHorizontal.Size = new Size(224, 26);
+            mnuTileHorizontal.Text = "แนวนอน";
+            mnuTileHorizontal.Click += mnuTileHorizontal_Click;
+            // 
+            // mnuTileVertical
+            // 
+            mnuTileVertical.Name = "mnuTileVertical";
+            mnuTileVertical.Size = new Size(224, 26);
+            mnuTileVertical.Text = "แนวตั้ง";
+            mnuTileVertical.Click += mnuTileVertical_Click;
+            // 
+            // mnuArrangeCascade
+            // 
+            mnuArrangeCascade.Name = "mnuArrangeCascade";
+            mnuArrangeCascade.Size = new Size(224, 26);
+            mnuArrangeCascade.Text = "ขั้นบรรได";
+            mnuArrangeCascade.Click += mnuArrangeCascade_Click;
             // 
             // Form1
             // 
@@ -176,5 +208,9 @@
         private ToolStripMenuItem mnuFormClose;
         private ToolStripMenuItem mnuFormCloseAll;
         private ToolStripSeparator toolStripMenuItem1;
+        private ToolStripMenuItem ปรบรปแบบToolStripMenuItem;
+        private ToolStripMenuItem mnuTileHorizontal;
+        private ToolStripMenuItem mnuTileVertical;
+        private ToolStripMenuItem mnuArrangeCascade;
     }
 }
